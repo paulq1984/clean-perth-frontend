@@ -1,12 +1,14 @@
 import './App.css'
+import DayView from './components/DayView'
 import MapView from './components/MapView'
 
 function App() {
 
   return (
-    <>
-    <MapView/>
-    </>
+    <div>
+        <MapView/>
+    </div>
+    
   )
 }
 

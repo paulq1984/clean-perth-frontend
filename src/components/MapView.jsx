@@ -29,8 +29,8 @@ import React from 'react'
             </div>
             <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pl-10">
                 <div className="relative w-full p-3 rounded md:p-8">
-                    <div className="rounded-lg bg-green text-black w-full">
-                        <img src="https://picsum.photos/400/300" alt="" />
+                    <div className="rounded-lg bg-green text-black w-full rounded-md">
+                        <img src="https://images.unsplash.com/photo-1722482445685-91a6b17d5d02?q=80&w=1475&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                     </div>
                 </div>
             </div>
