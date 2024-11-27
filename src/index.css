@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.leaflet-interactive {
+    transition: fill-opacity 0.3s ease, fill 0.3s ease, stroke-width 0.3s ease;
+  }
+  
