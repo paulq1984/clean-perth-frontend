@@ -2,7 +2,7 @@ import React from 'react'
 
 const DayView = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
 
         <div className="group cursor-pointer relative">
             <div className="min-w-32 bg-white min-h-48 p-3 mb-4 font-medium">
