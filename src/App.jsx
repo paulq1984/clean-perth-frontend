@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import DayView from './components/DayView'
-import MapView from './components/MapView'
+import Schedule from './pages/Schedule';
 
 function App() {
   const [selectedArea, setSelectedArea] = useState(null);
@@ -22,7 +21,7 @@ function App() {
   return (
     <div>
       {selectedArea ? (
-        <DayView area={selectedArea}/>
+        <Schedule area={selectedArea}/>
       ) : (
         <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-8">
         <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
