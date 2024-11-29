@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
   const MapView = () => {
+    const [selectedArea, setSelectedArea] = useState(null);
+
+    const handleSave = (area) => {
+        localStorage.setItem('CleanPerthArea', area)
+        setSelectedArea(area);
+        alert(`${area} has been selected`)
+    }
+
+
       return (
            <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-8">
             <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
@@ -15,12 +24,12 @@ import React from 'react'
                     </p>
                     <div className="mt-5 sm:flex md:mt-8">
                         <div className="rounded-md shadow">
-                            <a href="" className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-green-500 border border-transparent rounded-md hover:bg-green-600 focus:outline-none focus:shadow-outline-green md:py-4 md:text-lg md:px-10">
+                            <a href="" onClick={handleSave("north")} className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-green-500 border border-transparent rounded-md hover:bg-green-600 focus:outline-none focus:shadow-outline-green md:py-4 md:text-lg md:px-10">
                                 North
                             </a>
                         </div>
                         <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                            <a href="" className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-green-600 border border-transparent rounded-md hover:bg-green-700 focus:outline-none focus:shadow-outline-green md:py-4 md:text-lg md:px-10">
+                            <a href="" onClick={handleSave("south")} className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-green-600 border border-transparent rounded-md hover:bg-green-700 focus:outline-none focus:shadow-outline-green md:py-4 md:text-lg md:px-10">
                                 South
                             </a>
                         </div>
